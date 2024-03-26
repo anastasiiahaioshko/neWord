@@ -1,0 +1,138 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+}
+
+header {
+    background-color: #0000;
+    padding: 10px;
+    position: static;
+    text-align: center;
+    font-size: 77px;
+    font-family: 'Just Me Again Down Here';
+}
+
+main {
+    padding: 10px;
+    text-align: center;
+    margin-top: -150px;
+}
+p{
+  font-family: 'Helvetica', sans-serif;
+  font-size:18px;
+}
+h1 {
+  color:#fca311;
+}
+h2{
+  font-family: 'Helvetica', sans-serif;
+  font-size: 20px; 
+  font-weight: normal;
+}
+
+
+/* Black Theme */
+.black-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+/* White Theme */
+.white-theme {
+    background-color: #fff;
+  color: #333;}
+
+/* Toggle Button Styles */
+.toggle-btn {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #ddd;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+}
+
+.toggle-btn::before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    left: 2px;
+    top: 2px;
+    transition: left 0.3s;
+}
+
+/* Toggle Switched On State */
+.toggle-btn.on {
+    background-color: #62c462;
+}
+
+.toggle-btn.on::before {
+    left: calc(100% - 28px);
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  margin-left: 10px; 
+  font-family: 'helvetica';
+  font-size: 12px;
+}
+
+a:hover{
+  color: red; /* Change color on hover */
+  text-decoration: none;
+   transition: color 2s;
+} 
+
+a {
+  color: inherit; /* Use the same color as the parent element */
+  text-decoration: none;
+}
+
+button {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:after {
+  content: "";
+  background-color: #5AA377;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+button:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 13px 50px 13px;
+  }
+}
